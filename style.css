@@ -7,7 +7,7 @@ font-family: 'Open Sans', sans-serif; */
 
 body {
   background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
-
+  
   min-height: 100vh;
 }
 
@@ -28,18 +28,24 @@ nav {
 
 /* Check list styling */
 nav ul {
+  list-style-type: none;
+  padding: 0;            /* Removes default padding */
+  margin: 0;             /* Removes default margin */
   display: flex;
   gap: 48px;
 }
 
 /* Check list link style */
 nav ul li a {
-
+  text-decoration: none;
+  font-weight: 400;
+  color: #1F1534;
+  transition: all 0.2s ease-in-out; /* Smooth transition */
 }
 
 /* Make text bold on hover */
 nav ul li a:hover {
-  
+  font-weight: 700;
 }
 
 
@@ -52,32 +58,59 @@ main {
 
 /* Check margin and font styling */
 .text h1 {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Mulish', sans-serif; /* Apply Mulish font, with a fallback of sans-serif */
+  font-size: 48px;                   /* Set the font size to 48px */
+  font-weight: 400;                  /* Set the font weight to 700 (bold) */
+  line-height: 72px;                 /* Set the line height to 72px */
+  text-align: left;                  /* Align the text to the left */
 }
 
 /* Check font styling */
 .text h1 span {
+  font-family: 'Mulish', sans-serif; /* Apply Mulish font, with a fallback of sans-serif */
+  font-size: 48px;                   /* Set the font size to 48px */
+  font-weight: 700;                  /* Set the font weight to 700 (bold) */
+  line-height: 72px;                 /* Set the line height to 72px */
+  text-align: left;                  /* Align the text to the left */
+  color : #89C5CC;
 }
 
 /* Check font styling */
 .text p {
-  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Open Sans', sans-serif;  /* Set font family to Open Sans with a fallback */
+  font-size: 16px;                       /* Set font size to 16px */
+  line-height: 25.6px;                   /* Set line height for readability */
+  text-align: left;                      /* Align text to the left */
+  margin-top: 10px;
 }
 
 /* Check font styling and make sure the button is rounded */
 .text button {
   font-family: 'Open Sans', sans-serif;
-  display: flex;
-  gap: 8px;
+    display: flex;
+    align-items: center;      /* Aligns the icon and text vertically */
+    justify-content: center;  /* Centers the content horizontally */
+    padding: 14px 32px;      /* Sets padding for top/bottom and left/right */
+    background: #69B99D;     /* Sets the background color */
+    color: #F9F9F9;           /* Sets the text color */
+    border: none;             /* Removes default button border */
+    border-radius: 4px; /* Sets the border radius */
+    margin-top: 50px;        /* Margin above the button */
+    gap: 8px;                 /* Space between the icon and text */
+    cursor: pointer;          /* Changes cursor to pointer on hover */
 }
 
 /* Handle when user hover on the button */
 .text button:hover {
+  text-decoration: none; /* Removes underline from the links */
+  background: #4A9A7E;
 }
 
 /* Check the text styling */
 footer {
   font-family: 'Open Sans', sans-serif; 
+  width: fit-content;  /* Ensure the footer's width matches its content */
+  margin: 0 auto;      /* Horizontally center the footer */
 }
 
 /* Check the text styling */
